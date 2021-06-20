@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        CALCI
+    </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.1/p5.js"
+        integrity="sha512-a5hlZKgpC1LVAuKgVeXdP0D9Yfacj0hLtNdzx9zFMkIWRrQyO37KtIPiqArGmVuaBYu3ON6Vt0N3+G/JaLXQYQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <center>
+        <img src="head.png" height=150>
+    </center>
+    <div class="tab">
+
+
+        <button class="tablinks" onclick="openCity(event, 'MATHS')" id="defaultOpen">
+            MATHS
+        </button>
+        <button class="tablinks" onclick="openCity(event, 'PHYSICS')">PHYSICS</button>
+        <button class="tablinks" onclick="openCity(event, 'CHEMISTRY')">CHEMISTRY</button>
+        </font>
+    </div>
+
+    <!-- Tab content -->
+    <div id="MATHS" class="tabcontent">
+        <div class="eventS">
+            <button class="event" onclick="openCity(event, 'Sum')">
+                <span onclick="this.parentElement.style.display='none'">
+                    Sum
+                </span>
+            </button>
+
+            <button class="event" onclick="openCity(event, 'Product')">Product</button>
+
+
+        </div>
+
+    </div>
+
+    <div id="PHYSICS" class="tabcontent">
+        <h3>p</h3>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>Paris is the capital of France.</p>
+    </div>
+
+    <div id="CHEMISTRY" class="tabcontent">
+        <h3>c</h3>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+    <div id="Sum" class="eventcontent">
+        <div id="myDIV" class="header">
+            <h2>Sum</h2>
+            <p>Sum: <span id="SSUUMM"></span></p>
+            <input type="number" id="myInput" placeholder="Numbers..." >
+            <span onclick="newElement()" class="addBtn" on>Add</span>
+        </div>
+
+        <ul id="myUL">
+            
+        </ul>
+
+    </div>
+    <div id="Product" class="eventcontent">
+        <p>hiii</p>
+    </div>
+
+
+    <script>
+        document.getElementById("defaultOpen").click();
+    </script>
+    <button class="calculator" onclick="openCalculator()">X</button>
+</body>
+
+</html>
